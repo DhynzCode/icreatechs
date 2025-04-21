@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Information Form</title>
+</head>
+<body>
+
+  <h1>User Information Form</h1>
+
+  <form action="#" method="post">
+    
+    <!-- Basic Info -->
+    <fieldset>
+      <legend>Basic Information</legend>
+
+      <label for="fullname">Full Name:</label><br>
+      <input type="text" id="fullname" name="fullname" placeholder="John Doe" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="john@example.com" required><br><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" required minlength="6"><br><br>
+    </fieldset>
+
+    <!-- Preferences -->  
+    <fieldset>
+      <legend>Preferences</legend>
+
+      <p>Gender:</p>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label><br>
+
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label><br><br>
+
+      <p>Subscribe to:</p>
+      <input type="checkbox" id="news" name="subscribe" value="newsletter">
+      <label for="news">Newsletter</label><br>
+
+      <input type="checkbox" id="updates" name="subscribe" value="updates">
+      <label for="updates">Product Updates</label><br>
+    </fieldset>
+
+    <br>
+    <input type="submit" value="Submit">
+
+  </form>
+
+</body>
+</html>
